@@ -1,7 +1,13 @@
 # Automation with Selenium & Java 
 
 ## This project have some requirements: 
-![image](https://github.com/user-attachments/assets/a4e6358a-3fd2-42bb-aada-e959b375c735)
+1. Use Selenium framework
+2. Use TestNG
+3. Use POM structure
+4. Use asserts to do the verifications asked in diferent steps
+5. Use wait methods (avoid thread.sleep)
+6. Configure Screenshot Capture on failure
+
 
 
 ## There are 4 tests: 
@@ -12,7 +18,10 @@
 
 
 ## Test1
-![image](https://github.com/user-attachments/assets/34ef2562-3c98-4b7f-96a8-c09bad9fdafd)
+1.Navigate to: https://automationexercise.com/
+2.Click Signup/Login - Menu
+3.Enter name and email addresss on New User Signup
+4. Click Register 
 
 
 ## Test2
