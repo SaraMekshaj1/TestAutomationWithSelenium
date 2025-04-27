@@ -23,8 +23,7 @@
 2.Click Signup/Login - Menu
 
 3.Enter name and email addresss on New User Signup
-
-4. Click Register 
+4.Click Register 
 
 
 ## Test2
