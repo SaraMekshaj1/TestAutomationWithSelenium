@@ -17,7 +17,7 @@
 - [Test4](#test4)
 
 
-## Test1
+## Test1: Register Test
 Test 1: Register Test
 1. Navigate to: https://automationexercise.com/
 2. Click on Signup/Login from the top menu.
@@ -38,24 +38,50 @@ Test 1: Register Test
 Test 2: Login Test
 
 
-## Test2
-![image](https://github.com/user-attachments/assets/c596056e-740b-4086-ae32-69ba06cd61e6)
+## Test: Login Test
+1. Navigate to: https://automationexercise.com/
+2. Click on Signup/Login from the top menu.
+3. Enter the valid email and password you registered with.
+4. Click Login button.
+5. Verify that:
+  <> Logged in as [Name] is displayed at the top.
+  <>Delete Account button is visible.
+6. Log out by clicking Logout.
+7. Verify that you are redirected back to the Login page.
 
 
-## Test3
-![image](https://github.com/user-attachments/assets/4113f39b-669c-4eec-8976-29e399d1b2fd)
 
 
-## Test4
-![image](https://github.com/user-attachments/assets/68d51df2-cf84-40be-8e79-2dfce1873408)
-![image](https://github.com/user-attachments/assets/d660dbf8-43a1-4044-a138-0dbb4328bfc3)
-![image](https://github.com/user-attachments/assets/90f63c8a-838c-40eb-ae60-49352d59b6ee)
-![image](https://github.com/user-attachments/assets/d167b3b9-37dd-4ab0-9d43-d897c5f5ab2c)
-![image](https://github.com/user-attachments/assets/0edab750-fe42-4faa-be0c-d6c4cd8f27a3)
+## Test3:  Dashboard / Wishlist / Cart Test
+1. Navigate to: https://automationexercise.com/products
+2. Hover over a few products.
+3. Add two products to the Cart by clicking Add to cart.
+4. After adding each product:
+   <>Verify that a popup "Added!" message appears.
+   <>Click Continue Shopping.
+5. Click on Cart button at the top.
+6. Verify that both added products are visible inside the cart.
+7. Verify that the number of items in Cart (icon at top) is 2.
+8. Close the browser.
 
-## After running test cases we take these results: 
 
 
+## Test4:  Shopping Cart Checkout Test
+Precondition: You have added 2 products into cart (Test 3).
+
+1. Navigate to: https://automationexercise.com/view_cart
+2. Verify that you are on the Shopping Cart page.
+3. Verify that:
+   <>Proceed To Checkout button is visible.
+   <>Product names, quantities, and individual prices are displayed.
+4. Click Proceed To Checkout.
+5. Verify that the Delivery Address matches the one you entered during Registration.
+6. Enter a comment in the text area (like: "Please deliver soon").
+7. Click Place Order button.
+8. Enter Payment Details (you can fill dummy data like name on card, card number, cvc, expiration).
+9. Click Pay and Confirm Order button.
+10. Verify that Your order has been placed successfully! is displayed.
+11. Close the browser.
 
 
 
