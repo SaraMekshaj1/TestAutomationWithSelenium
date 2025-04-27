@@ -18,10 +18,24 @@
 
 
 ## Test1
+Test 1: Register Test
 1. Navigate to: https://automationexercise.com/
-2. Click Signup/Login - Menu
-3. Enter name and email addresss on New User Signup
-4. Click Register 
+2. Click on Signup/Login from the top menu.
+3. Verify that the page title is Login to your account.
+4. Fill out the New User Signup! section with:
+   Name
+   Email
+5. Click Signup button.
+6. On the next page (Enter Account Information):
+   <>Fill in all required details (title, password, DOB, etc.)
+   <>Checkboxes: Sign up for newsletter + Receive special offers
+   <>Fill Address Details
+7. Click Create Account button.
+8. Verify that ACCOUNT CREATED! text is displayed.
+9. Click Continue.
+10. Verify that Logged in as [Name] is visible.
+
+Test 2: Login Test
 
 
 ## Test2
