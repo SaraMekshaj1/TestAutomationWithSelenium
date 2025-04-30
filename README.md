@@ -23,13 +23,13 @@ Test 1: Register Test
 2. Click on Signup/Login from the top menu.
 3. Verify that the page title is Login to your account.
 4. Fill out the New User Signup! section with:
-   Name
-   Email
+   - Name
+   - Email
 5. Click Signup button.
-6. On the next page (Enter Account Information):
-   <>Fill in all required details (title, password, DOB, etc.)<br>
-   <>Checkboxes: Sign up for newsletter + Receive special offers<br>
-   <>Fill Address Details<br>
+6. On the next page (Enter Account Information):<br>
+   - Fill in all required details (title, password, DOB, etc.)<br>
+   - Checkboxes: Sign up for newsletter + Receive special offers<br>
+   - Fill Address Details<br>
 7. Click Create Account button.
 8. Verify that ACCOUNT CREATED! text is displayed.
 9. Click Continue.
@@ -43,9 +43,9 @@ Test 2: Login Test
 2. Click on Signup/Login from the top menu.
 3. Enter the valid email and password you registered with.
 4. Click Login button.
-5. Verify that:
-  <> Logged in as [Name] is displayed at the top.
-  <>Delete Account button is visible.
+5. Verify that:<br>
+   - Logged in as [Name] is displayed at the top.<br>
+   - Delete Account button is visible.<br>
 6. Log out by clicking Logout.
 7. Verify that you are redirected back to the Login page.
 
@@ -56,9 +56,9 @@ Test 2: Login Test
 1. Navigate to: https://automationexercise.com/products
 2. Hover over a few products.
 3. Add two products to the Cart by clicking Add to cart.
-4. After adding each product:
-   <>Verify that a popup "Added!" message appears.
-   <>Click Continue Shopping.
+4. After adding each product:<br>
+   - Verify that a popup "Added!" message appears.<br>
+   - Click Continue Shopping.<br>
 5. Click on Cart button at the top.
 6. Verify that both added products are visible inside the cart.
 7. Verify that the number of items in Cart (icon at top) is 2.
@@ -71,9 +71,9 @@ Precondition: You have added 2 products into cart (Test 3).
 
 1. Navigate to: https://automationexercise.com/view_cart
 2. Verify that you are on the Shopping Cart page.
-3. Verify that:
-   <>Proceed To Checkout button is visible.
-   <>Product names, quantities, and individual prices are displayed.
+3. Verify that:<br>
+   - Proceed To Checkout button is visible.<br>
+   - Product names, quantities, and individual prices are displayed.<br>
 4. Click Proceed To Checkout.
 5. Verify that the Delivery Address matches the one you entered during Registration.
 6. Enter a comment in the text area (like: "Please deliver soon").
