@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.JavascriptExecutor;
+import pages.AccountCreatedPage;
 import pages.AccountInformationPage;
 import pages.Signup_LoginPage;
 
@@ -24,7 +25,7 @@ public class BaseTest {
     private String url="https://automationexercise.com/";
     protected Signup_LoginPage signupLoginPage;
     protected AccountInformationPage accountInformationPage;
-    //protected
+    protected AccountCreatedPage accountCreatedPage;
     @BeforeClass
     public void setUp(){
         driver = new ChromeDriver();
@@ -40,6 +41,7 @@ public class BaseTest {
         homePage=new HomePage();
         signupLoginPage=new Signup_LoginPage();
         accountInformationPage=new AccountInformationPage();
+        accountCreatedPage =new AccountCreatedPage();
 
 
     }

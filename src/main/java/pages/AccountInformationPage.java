@@ -2,11 +2,12 @@ package pages;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 
 import static utilities.DropDownUtility.*;
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
-public class AccountInformationPage extends Signup_LoginPage{
+public class AccountInformationPage extends BasePage{
     private By pageName= By.xpath("//*[@id=\"form\"]/div/div/div/div[1]/h2/b");
     private  By titleMsrRadioButton=By.id("id_gender2");
     private By nameField=By.id("name");
@@ -31,10 +32,10 @@ public class AccountInformationPage extends Signup_LoginPage{
 
 
 
-    public String getPageName(){
+    public String getPageTitle(){
         return find(pageName).getText();
     }
-    public void clicktitleMsrRadioButton(){
+    public void clickTitleMsrRadioButton(){
         click(titleMsrRadioButton);
     }
     public boolean isMrsRadioButtonSelected(){
@@ -59,6 +60,7 @@ public class AccountInformationPage extends Signup_LoginPage{
         scrollToElementJS(monthDropDown);
         selectByVisibleText(monthDropDown,text);
     }
+
     public void selectMonthDropDown(int index){
         scrollToElementJS(monthDropDown);
         selectByIndex(monthDropDown,index);
@@ -72,6 +74,7 @@ public class AccountInformationPage extends Signup_LoginPage{
         scrollToElementJS(yearDropDown);
         selectByIndex(yearDropDown,index);
     }
+
 
     public void clickNewsletterCheckBox(){
         if(!find(newsletterCheckBox).isSelected()){
@@ -124,8 +127,10 @@ public class AccountInformationPage extends Signup_LoginPage{
     public void setMobileNr(String mobileNr){
         set(mobileNumberField,mobileNr);
     }
-    public void clickCreateAccountButton(){
+    public AccountCreatedPage clickCreateAccountButton(){
+        scrollToElementJS(createAccountButton);
         click(createAccountButton);
+        return new AccountCreatedPage();
     }
 
     

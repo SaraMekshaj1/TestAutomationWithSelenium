@@ -12,6 +12,11 @@ public class DropDownUtility extends Utility {
    private static Select findDropDown(By locator){
         return new Select(driver.findElement(locator));
     }
+
+    public static String getFirstSelectedOption(By locator) {
+        return findDropDown(locator).getFirstSelectedOption().getText();
+    }
+
     public static void selectByVisibleText(By locator,String text){
         findDropDown(locator).selectByVisibleText(text);
     }
@@ -27,4 +32,5 @@ public class DropDownUtility extends Utility {
     public static List<String > getAllSelectedOptions(By locator){List<WebElement> allSeletedOptions=  findDropDown(locator).getAllSelectedOptions();
       return allSeletedOptions.stream().map(WebElement::getText).collect(Collectors.toList());
     }
+
 }
