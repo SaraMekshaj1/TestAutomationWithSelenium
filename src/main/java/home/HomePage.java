@@ -7,6 +7,7 @@ import pages.Signup_LoginPage;
 public class HomePage extends BasePage {
 
     private By loginHomeButton = By.xpath("//a[@href='/login']");
+   
 
     public Signup_LoginPage goToLoginPage() {
         click(loginHomeButton);

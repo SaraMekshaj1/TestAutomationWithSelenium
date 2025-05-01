@@ -26,5 +26,10 @@ public class Signup_LoginPage  extends BasePage {
         click(signUpButon);
         return new AccountInformationPage();
     }
+    public AccountInformationPage signInIntoApplication(String name, String email){
+        setNameAtSingUp(name);
+        setEmailAtSingUp(email);
+        return clickSignUpButton();
+    }
 
 }

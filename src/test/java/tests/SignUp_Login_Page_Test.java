@@ -22,9 +22,6 @@ public class SignUp_Login_Page_Test extends BaseTest {
         Assert.assertEquals(actual,"ENTER ACCOUNT INFORMATION");
     }
 
-    @Test
-    public void testAccountInformationPage(){
 
-    }
 
 }

@@ -24,6 +24,7 @@ public class BaseTest {
     private String url="https://automationexercise.com/";
     protected Signup_LoginPage signupLoginPage;
     protected AccountInformationPage accountInformationPage;
+    //protected
     @BeforeClass
     public void setUp(){
         driver = new ChromeDriver();
