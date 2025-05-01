@@ -35,10 +35,9 @@ Test 1: Register Test
 9. Click Continue.
 10. Verify that Logged in as [Name] is visible.
 
-Test 2: Login Test
 
 
-## Test: Login Test
+## Test2: Login Test
 1. Navigate to: https://automationexercise.com/
 2. Click on Signup/Login from the top menu.
 3. Enter the valid email and password you registered with.
