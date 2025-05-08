@@ -2,6 +2,7 @@ package home;
 
 import base.BasePage;
 import org.openqa.selenium.By;
+import pages.ProductsPage;
 import pages.Signup_LoginPage;
 
 public class HomePage extends BasePage {
@@ -10,7 +11,12 @@ public class HomePage extends BasePage {
     private By logedAsNAME=By.xpath("//a[contains(., 'Logged in as') and .//b[text()='Sara']]");
     private By deleteAccountButton=By.xpath("//a[@href='/delete_account']");
     private By logoutButton=By.xpath("//a[@href='/logout']");
+    private By productsNavBarButton=By.xpath("//a[@href='/products']");
 
+    public ProductsPage goToProductsPage(){
+        click(productsNavBarButton);;
+        return new ProductsPage();
+    }
 
     public Signup_LoginPage goToSignLoginPage() {
         click(loginSigninHomeButton);
