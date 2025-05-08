@@ -9,6 +9,8 @@ public class HomePage extends BasePage {
     private By loginSigninHomeButton = By.xpath("//a[@href='/login']");
     private By logedAsNAME=By.xpath("//a[contains(., 'Logged in as') and .//b[text()='Sara']]");
     private By deleteAccountButton=By.xpath("//a[@href='/delete_account']");
+    private By logoutButton=By.xpath("//a[@href='/logout']");
+
 
     public Signup_LoginPage goToSignLoginPage() {
         click(loginSigninHomeButton);
@@ -21,6 +23,10 @@ public class HomePage extends BasePage {
 
     public boolean isDeleteButtonVisible(){
         return find(deleteAccountButton).isDisplayed();
+    }
+    public Signup_LoginPage clickLogOut(){
+        click(logoutButton);
+        return new Signup_LoginPage();
     }
 
 }
