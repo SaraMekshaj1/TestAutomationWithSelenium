@@ -11,7 +11,7 @@ public class Test1RegisterTest extends BaseTest {
 
     @Test
     public void testFillAccountInformation() {
-        var accountInformationPage = homePage.goToSignLoginPage().signInIntoApplication("sara", "saraMedkshjaj1869@gmail.com");
+        var accountInformationPage = homePage.goToSignLoginPage().signInIntoApplication("sara", "sara6Medkshjaj1869@gmail.com");
         String actual= accountInformationPage.getPageTitle();
         Assert.assertEquals(actual,"ENTER ACCOUNT INFORMATION");
 
