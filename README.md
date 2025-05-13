@@ -60,8 +60,7 @@ Test 1: Register Test
    - Click Continue Shopping.<br>
 5. Click on Cart button at the top.
 6. Verify that both added products are visible inside the cart.
-7. Verify that the number of items in Cart (icon at top) is 2.
-8. Close the browser.
+
 
 
 
