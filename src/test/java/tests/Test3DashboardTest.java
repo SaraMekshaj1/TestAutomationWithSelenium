@@ -4,9 +4,6 @@ import baseTestpack.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static utilities.SwitchToUtility.acceptAlert;
-import static utilities.SwitchToUtility.getAlertText;
-
 public class Test3DashboardTest extends BaseTest {
 
     @Test
@@ -32,6 +29,13 @@ public class Test3DashboardTest extends BaseTest {
 
         Assert.assertEquals(actualTextp2,expectedAlertText);
         productPage.clickContinueButton();
+
+       var cardPage= homePage.goToCartPage();
+
+       Assert.assertTrue(cardPage.isStylishDressItemDisplayed(),"Stylish Dress Item is not visible in cart");
+       Assert.assertTrue(cardPage.isSleevelessDressItemDisplayed(),"SleevelessDress Item is not visible in cart");
+
+
 
 
     }
