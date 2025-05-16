@@ -71,7 +71,8 @@ Precondition: You have added 2 products into cart (Test 3).
 2. Verify that you are on the Shopping Cart page.
 3. Verify that:<br>
    - Proceed To Checkout button is visible.<br>
-   - Product names, quantities, and individual prices are displayed.<br>
+   - Product names and individual prices are displayed.<br>
+   - Quanities of both items added to cart are 1. <br>
 4. Click Proceed To Checkout.
 5. Verify that the Delivery Address matches the one you entered during Registration.
 6. Enter a comment in the text area (like: "Please deliver soon").
